@@ -78,7 +78,24 @@
             </div>
         </main>
         <section class="container">
-           
+           <div class="my-5">
+            <h1 class="text-center my-3 mt-3">How does  JavaScript work?</h1>
+            <p class="lead">JavaScript is a single thread, synchronous language. It's a  client-side scripting language. However, nowadays it is also used in backend applications.
+             In almost every browser, there is an engine to execute JavaScript code. Specifically, Google Chrome uses the V8 engine to run a .js file. There are also other engines in other browsers to execute  JS code. 
+             <br>
+             <br>
+             First of all, the browser's engine takes the .js source file and then sends the code to the parser in the engine to parse the code. The parser reads the code in line by line manner that's why it's called synchronous. If it finds any syntactical error in the code, it stops exciting the code immediately and shows the error in the console. When it finishes parsing the code without having any syntactic issue, it creates a data structure called AST(Abstract Syntax Tree). 
+             After that, the engine translates the data structure in machine code, in this case, byte/binary code(0,1). Finally, the engine executes the code and we see the result in the UI.</p>
+           </div>
+           <div>
+               <h1 class="text-center my-3 mt-1">What Does JS Event Loop Do?</h1>
+               <p class="lead">
+                The simple job of the Event loop is to monitor the Call Stack and Event Queue and execute the waited function.
+                <br>
+                <br>
+                Whenever the browser's engine reads the JS code, it goes through the code in line by line manner. It stored the synchronous function in the Call Stack and the asynchronous function in the Event Queue to be executed. Here Event Loop takes care of executing all the functions one by one as JavaScript is a single thread language. Event Loop runs all the synchronous functions from the Call Stack in LIFO(last in first out). After executing all the synchronous functions, it starts running the asynchronous function in FIFO(first in first out). The Event Loop always keeps watching the JS file to execute functions from the Call Stack and Event Queue. 
+               </p>
+           </div>
         </section>
         <footer></footer>
 
